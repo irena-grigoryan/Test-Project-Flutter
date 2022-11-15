@@ -41,6 +41,7 @@ class CosmeticDetails extends StatelessWidget {
                         color: Color.fromARGB(255, 93, 93, 93))),
               ),
             ),
+            //
             Padding(
               padding: const EdgeInsets.all(12.0),
               child: Text(
@@ -50,17 +51,18 @@ class CosmeticDetails extends StatelessWidget {
               ),
             ),
             //
-            FloatingActionButton.extended(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              label: const Text('Back'),
-              icon: const Icon(Icons.arrow_back_ios_rounded),
-              backgroundColor: const Color.fromARGB(255, 232, 222, 204),
-            ),
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        label: const Text('Back'),
+        icon: const Icon(Icons.arrow_back_ios_rounded),
+        backgroundColor: const Color.fromARGB(255, 232, 222, 204),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
